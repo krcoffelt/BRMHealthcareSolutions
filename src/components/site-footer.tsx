@@ -29,6 +29,16 @@ export function SiteFooter() {
             <li>{siteContent.contact.email}</li>
             <li>{siteContent.contact.phone}</li>
             <li>{siteContent.contact.bookingHours}</li>
+            <li>
+              <a
+                href={siteContent.contact.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-sea"
+              >
+                LinkedIn
+              </a>
+            </li>
           </ul>
         </div>
       </div>

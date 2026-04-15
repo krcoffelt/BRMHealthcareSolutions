@@ -267,6 +267,7 @@ export const siteContent = {
   contact: {
     email: "brmhealthcaresolutions@gmail.com",
     phone: "(555) 555-0199",
+    linkedin: "https://www.linkedin.com/company/brm-healthcare-solutions",
     bookingTitle: "Schedule a 30-minute Google Meet",
     bookingHours: "Monday through Friday, 9:00 AM to 5:00 PM",
   },
