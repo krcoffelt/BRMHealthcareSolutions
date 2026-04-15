@@ -6,33 +6,52 @@ import { siteContent } from "@/content/site";
 export default function ServicesPage() {
   return (
     <div className="section-frame">
-      <section className="panel hero-grid px-8 py-10 md:px-12 md:py-14">
+      <section className="hero-grid panel grid gap-8 px-8 py-10 md:grid-cols-[1.05fr_0.95fr] md:px-12 md:py-12">
         <SectionHeading
           eyebrow="Services"
-          title="Respiratory consulting, credentialing, and staffing support."
-          description="Clear services, simple presentation."
+          title="Everything your respiratory department needs under one roof."
+          description="Consulting, staffing, accreditation readiness, education, and leadership development built around measurable facility performance."
         />
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          {siteContent.services.map((service) => (
-            <ServiceCard key={service.title} service={service} />
-          ))}
+        <div className="dark-band rounded-[1.8rem] p-8 text-white">
+          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sage">Performance Focus</p>
+          <p className="mt-5 text-3xl font-display leading-tight">
+            Elite respiratory leadership without full-time overhead.
+          </p>
+          <p className="mt-4 text-sm leading-7 text-white/76">
+            BRM helps facilities strengthen workflows, billing performance, readiness, staffing support, and respiratory leadership without adding unnecessary complexity.
+          </p>
         </div>
       </section>
 
-      <section className="mt-12 panel p-8 md:p-10">
-        <p className="eyebrow">For healthcare organizations</p>
-        <h2 className="mt-4 font-display text-4xl text-ink">
-          Facilities can book support for staffing, consulting, and credentialing.
-        </h2>
-        <p className="mt-5 max-w-3xl text-base leading-8 text-steel">
-          Clinics, hospitals, and healthcare leaders can use the same scheduling path to discuss
-          consulting, credentialing, and staffing fit.
-        </p>
-        <p className="mt-3 max-w-3xl text-base leading-8 text-steel">
-          BRM also brings proven P&amp;L improvement through financial analysis, throughput efficiency,
-          readmission reduction, and billing analysis.
-        </p>
-        <PrimaryCTA className="mt-8">Schedule a Call</PrimaryCTA>
+      <section className="mt-8 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+        {siteContent.services.map((service) => (
+          <ServiceCard key={service.title} service={service} />
+        ))}
+      </section>
+
+      <section className="mt-12 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="panel p-8 md:p-10">
+          <p className="eyebrow">For healthcare organizations</p>
+          <h2 className="mt-4 font-display text-4xl leading-tight text-ink">
+            One conversation for your operational, staffing, and compliance needs.
+          </h2>
+          <p className="mt-5 max-w-3xl text-base leading-8 text-steel">
+            Whether you need interim leadership, staff education, billing compliance, or a department overhaul, BRM can build the right level of support for your facility.
+          </p>
+          <p className="mt-3 max-w-3xl text-base leading-8 text-steel">
+            BRM also brings proven P&amp;L improvement through financial analysis, throughput efficiency, readmission reduction, and billing analysis.
+          </p>
+          <PrimaryCTA className="mt-8">Request a Consultation</PrimaryCTA>
+        </div>
+
+        <div className="data-panel rounded-[2rem] border border-bone/50 p-8">
+          <p className="eyebrow">Advisory Scope</p>
+          <ul className="mt-5 space-y-3 text-sm leading-7 text-steel">
+            <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-sea" aria-hidden="true" /><span>Financial and billing analysis</span></li>
+            <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-sea" aria-hidden="true" /><span>Throughput and readmission reduction strategies</span></li>
+            <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 rounded-full bg-sea" aria-hidden="true" /><span>Compliance and survey readiness support</span></li>
+          </ul>
+        </div>
       </section>
 
       <section className="mt-12">
@@ -80,7 +99,7 @@ export default function ServicesPage() {
                 Estimated hours and annual retainer terms.
               </p>
             </div>
-            <div className="rounded-full border border-sea/10 bg-mist px-5 py-3 text-sm font-semibold text-ink">
+            <div className="rounded-full border border-bone/60 bg-mist px-5 py-3 text-sm font-semibold text-ink">
               Annual Professional Services Fee: {siteContent.feeSchedule.annualProfessionalServicesFee}
             </div>
           </div>

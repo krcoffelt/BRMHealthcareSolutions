@@ -68,7 +68,7 @@ export function CalendlyEmbed({ url }: CalendlyEmbedProps) {
     <div className="panel overflow-hidden p-3 md:p-4">
       <div
         id="calendly-inline-widget"
-        className="min-h-[700px] rounded-[1.5rem]"
+        className="min-h-[700px] rounded-[1.5rem] bg-white"
         aria-label="Calendly scheduling widget"
       />
     </div>

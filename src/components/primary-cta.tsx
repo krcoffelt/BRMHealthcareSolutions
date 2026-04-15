@@ -14,17 +14,17 @@ export function PrimaryCTA({
   className = "",
 }: PrimaryCTAProps) {
   const baseClasses =
-    "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold tracking-[0.08em] transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4";
+    "inline-flex items-center justify-center rounded-full px-6 py-3.5 text-sm font-semibold tracking-[0.08em] transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4";
   const variants = {
     solid:
-      "bg-sea text-white shadow-lg shadow-sea/20 hover:bg-ember focus-visible:outline-sea",
+      "bg-sea text-white shadow-float shadow-sea/20 hover:bg-ember focus-visible:outline-sea",
     ghost:
-      "border border-sea/15 bg-white text-ink hover:border-sea hover:text-sea focus-visible:outline-sea",
+      "border border-bone/70 bg-white/90 text-ink hover:border-sea hover:text-sea focus-visible:outline-sea",
   };
 
   return (
     <Link href={href} className={`${baseClasses} ${variants[variant]} ${className}`.trim()}>
-      {children}
+      <span>{children}</span>
     </Link>
   );
 }

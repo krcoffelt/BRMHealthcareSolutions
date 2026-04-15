@@ -16,6 +16,17 @@ export type FeeScheduleItem = {
   retainer: string;
 };
 
+export type EducationCategory = {
+  title: string;
+  description: string;
+  items: string[];
+};
+
+export type TrustMetric = {
+  value: string;
+  label: string;
+};
+
 export type FacilityFeeItem = {
   service: string;
   estimatedHours: string;
@@ -26,19 +37,69 @@ export const siteContent = {
   companyName: "BRM Healthcare Solutions",
   tagline: "Respiratory Consulting, Agency Staffing, and Critical Care Credentialing",
   description:
-    "Clinical staffing support, respiratory expertise, and credentialing guidance for healthcare professionals and the organizations that rely on them.",
+    "Experienced respiratory consulting, agency staffing, education, and critical care credentialing support for facilities that need stronger clinical and financial performance.",
   navItems: [
     { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
+    { href: "/education", label: "Education" },
     { href: "/about", label: "About Me" },
     { href: "/book", label: "Book" },
   ] satisfies NavItem[],
+  hero: {
+    title: "Elite Respiratory Leadership. Proven Results. No Overhead.",
+    subheadline:
+      "BRM Healthcare Solutions delivers experienced respiratory consulting, agency staffing, and critical care credentialing so your facility gets the expertise of a seasoned director without the full-time cost.",
+    supportingLine:
+      "Trusted by facilities across the region. 5 consecutive Joint Commission surveys. Zero deficiencies.",
+  },
+  valueProposition: {
+    title: "Your Respiratory Department, Optimized.",
+    paragraphs: [
+      "We don't just consult. We replace the gap in your respiratory leadership with over 18 years of critical care expertise, a Gold Standard clinical framework, and a hands-on operational approach that drives measurable results from day one.",
+      "Whether you need interim leadership, staff education, billing compliance, or a full department overhaul, BRM brings the experience your patients and your bottom line demand.",
+    ],
+  },
+  roiSection: {
+    title: "A Typical Return on Investment in 2-3 Months.",
+    intro:
+      "BRM has generated over $112 million in increased billing for healthcare facilities through:",
+    items: [
+      "Financial and charge analysis",
+      "Throughput efficiency improvements",
+      "Readmission rate reduction programs",
+      "Billing compliance and documentation review",
+    ],
+    closing:
+      "The annual cost of BRM's retainer pays for itself fast. Most facilities see full ROI within 60-90 days.",
+  },
   proofPoints: [
     "18+ years of respiratory and critical care experience",
     "9+ years of healthcare leadership and management experience",
     "$112M in proven P&L improvement through operational and billing analysis",
     "5 successful Joint Commission surveys in a row with zero deficiencies noted",
   ],
+  trustMetrics: [
+    {
+      value: "$112M+",
+      label: "Proven increase in billing revenue",
+    },
+    {
+      value: "5 in a row",
+      label: "Joint Commission surveys with zero deficiencies",
+    },
+    {
+      value: "18+ years",
+      label: "Critical care and respiratory leadership experience",
+    },
+    {
+      value: "2-3 months",
+      label: "Typical ROI on annual retainer cost",
+    },
+    {
+      value: "95%+",
+      label: "Staff retention rates across managed departments",
+    },
+  ] satisfies TrustMetric[],
   audiencePaths: [
     {
       title: "For Clinicians and Candidates",
@@ -53,42 +114,116 @@ export const siteContent = {
   ],
   services: [
     {
-      title: "Agency Staffing",
+      title: "Respiratory Consulting & Operations",
       description:
-        "Agency staffing remains part of the BRM Healthcare Solutions service mix and can be discussed directly, even though this first version of the site is not focused on detailing staffing workflows.",
+        "From KPI tracking and protocol development to supply chain optimization and length-of-stay reduction, BRM manages the full operational picture of your respiratory services.",
       whoItsFor:
-        "Clinicians and facilities that want to discuss respiratory staffing availability at a high level.",
+        "Facilities that need respiratory leadership, operational improvement, and performance oversight without hiring a full-time director.",
       outcomes: [
-        "Agency staffing is listed as an available service line",
-        "Specific staffing details can be covered in a direct conversation",
-        "Current website emphasis stays on consulting and credentialing support",
+        "KPI tracking and protocol development",
+        "Supply chain, throughput, and length-of-stay optimization",
+        "Hands-on respiratory department operations support",
       ],
     },
     {
-      title: "Critical Care Credentialing",
+      title: "Interim & Agency Staffing",
       description:
-        "Guidance for navigating credentialing requirements, readiness expectations, and the documentation needed to keep opportunities moving.",
+        "Credentialed respiratory therapists are available across ICU, ER, PICU, and NICU settings with 24-hour lead time when available.",
       whoItsFor:
-        "Clinicians preparing for credentialing and organizations needing reliable credentialing support.",
+        "Facilities that need experienced respiratory coverage and staffing support that can contribute from the first shift.",
       outcomes: [
-        "Reduced confusion around credentialing steps",
-        "Better readiness for facility requirements",
-        "Cleaner coordination across staffing and compliance needs",
+        "Experienced and vetted respiratory staffing support",
+        "Coverage across ICU, ER, PICU, and NICU settings",
+        "Flexible staffing discussion tied to facility needs",
       ],
     },
     {
-      title: "Respiratory Consulting",
+      title: "Compliance & Accreditation Readiness",
       description:
-        "Cost-effective, results-driven respiratory leadership tailored to each facility's daily and annual operational needs.",
+        "BRM prepares your team for TJC, CMS, CAP, and CLIA reviews and stands with you through every survey.",
       whoItsFor:
-        "Healthcare leaders, clinics, and hospitals evaluating respiratory workflows, staffing models, or program support needs.",
+        "Organizations that need stronger compliance, documentation discipline, and survey readiness.",
       outcomes: [
-        "KPI development and operational oversight",
-        "Orientation, leadership development, and staff education",
-        "$112M in proven P&L improvement through throughput, readmission, and billing analysis",
+        "5 consecutive Joint Commission surveys with zero deficiencies",
+        "Survey preparation and live support",
+        "Billing, documentation, and operational review",
+      ],
+    },
+    {
+      title: "Staff Education & Credentialing",
+      description:
+        "BLS and ACLS instruction, tracheostomy training, oxygen therapy education, competency programs, and skills orientation delivered by a certified educator with nearly two decades in critical care.",
+      whoItsFor:
+        "Facilities that need stronger onboarding, competency support, and education resources for respiratory teams.",
+      outcomes: [
+        "BLS, ACLS, tracheostomy, and oxygen therapy education",
+        "Competency programs and skills orientation",
+        "Credentialing and readiness support",
+      ],
+    },
+    {
+      title: "Leadership Development",
+      description:
+        "BRM develops your next generation of respiratory leaders through structured orientation programs, charge analysis, and evidence-based management frameworks.",
+      whoItsFor:
+        "Organizations building sustainable leadership depth and stronger day-to-day respiratory management.",
+      outcomes: [
+        "Structured orientation programs",
+        "Charge analysis and leadership frameworks",
+        "Long-term team development and operational consistency",
       ],
     },
   ] satisfies Service[],
+  education: {
+    intro:
+      "A dedicated education section for videos, clinical guidelines, templates, and operational resources.",
+    categories: [
+      {
+        title: "Video Library",
+        description:
+          "Recorded education sessions, onboarding walkthroughs, equipment training, and respiratory refreshers.",
+        items: [
+          "Orientation and onboarding videos",
+          "Equipment and workflow walkthroughs",
+          "Leadership and staff development sessions",
+        ],
+      },
+      {
+        title: "Guidelines & Protocols",
+        description:
+          "Clinical guidelines, department standards, competency references, and survey-readiness materials.",
+        items: [
+          "Respiratory care guidelines",
+          "Competency and policy references",
+          "Compliance and accreditation support documents",
+        ],
+      },
+      {
+        title: "Templates & Tools",
+        description:
+          "Operational templates to support KPI tracking, education planning, orientation, and leadership development.",
+        items: [
+          "KPI and quality tracking templates",
+          "Orientation and education tools",
+          "Leadership development resources",
+        ],
+      },
+    ] satisfies EducationCategory[],
+  },
+  aboutSection: {
+    title: "The Experience Your Patients Deserve. The Efficiency Your Organization Requires.",
+    paragraphs: [
+      "BRM Healthcare Solutions was founded on a simple premise: respiratory leadership should not be a gap in your operations. With over 18 years of critical care experience spanning community hospitals, rehabilitation facilities, and major regional medical centers, BRM brings a track record that speaks for itself.",
+      "We've helped facilities restore CMS billing compliance, build service lines from the ground up, and achieve elite accreditation standards. BRM brings the expertise of a full-time director at a fraction of the cost, with the flexibility your facility needs to grow.",
+    ],
+  },
+  finalCta: {
+    title: "Ready to Elevate Your Respiratory Program?",
+    description:
+      "Let's talk about what BRM can do for your facility. Whether you need a one-time consultation or a full annual partnership, we'll build a plan around your specific needs and budget.",
+    buttonLabel: "Schedule Your Free Discovery Call",
+    note: "All services available individually or as part of our annual retainer, starting at $7,500/year.",
+  },
   feeSchedule: {
     note: "Individual professional service costs are collected upfront.",
     individualServices: [
@@ -268,7 +403,7 @@ export const siteContent = {
     email: "brmhealthcaresolutions@gmail.com",
     phone: "(555) 555-0199",
     linkedin: "https://www.linkedin.com/company/brm-healthcare-solutions",
-    bookingTitle: "Schedule a 30-minute Google Meet",
+    bookingTitle: "Schedule Your Free Discovery Call",
     bookingHours: "Monday through Friday, 9:00 AM to 5:00 PM",
   },
 };
