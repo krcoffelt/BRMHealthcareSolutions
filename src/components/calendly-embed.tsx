@@ -56,7 +56,7 @@ export function CalendlyEmbed({ url }: CalendlyEmbedProps) {
       <div className="panel p-8 md:p-10">
         <p className="eyebrow">Calendly setup needed</p>
         <h2 className="mt-4 font-display text-3xl text-ink">Add your booking link to activate scheduling.</h2>
-        <p className="mt-4 max-w-2xl text-base leading-8 text-ink/76">
+        <p className="mt-4 max-w-2xl text-base leading-8 text-steel">
           Set the <code>NEXT_PUBLIC_CALENDLY_URL</code> environment variable with your Calendly event URL.
           The embedded scheduler will appear here once the link is configured.
         </p>

@@ -16,9 +16,10 @@ export function PrimaryCTA({
   const baseClasses =
     "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold tracking-[0.08em] transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4";
   const variants = {
-    solid: "bg-sea text-white shadow-lg shadow-sea/20 hover:bg-ink focus-visible:outline-sea",
+    solid:
+      "bg-sea text-white shadow-lg shadow-sea/20 hover:bg-ember focus-visible:outline-sea",
     ghost:
-      "border border-ink/15 bg-white/80 text-ink hover:border-sea hover:text-sea focus-visible:outline-ink",
+      "border border-sea/15 bg-white text-ink hover:border-sea hover:text-sea focus-visible:outline-sea",
   };
 
   return (

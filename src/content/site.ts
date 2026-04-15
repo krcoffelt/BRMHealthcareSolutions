@@ -34,10 +34,10 @@ export const siteContent = {
     { href: "/book", label: "Book" },
   ] satisfies NavItem[],
   proofPoints: [
-    "19 years of critical care expertise",
+    "18+ years of respiratory and critical care experience",
     "9+ years of healthcare leadership and management experience",
-    "More than $112M in financial growth supported",
-    "Retention rates above 95% with a 36% quality improvement lift",
+    "$112M in proven P&L improvement through operational and billing analysis",
+    "5 successful Joint Commission surveys in a row with zero deficiencies noted",
   ],
   audiencePaths: [
     {
@@ -79,13 +79,13 @@ export const siteContent = {
     {
       title: "Respiratory Consulting",
       description:
-        "Consulting support for organizations that want stronger respiratory care operations, informed staffing decisions, and credible clinical guidance.",
+        "Cost-effective, results-driven respiratory leadership tailored to each facility's daily and annual operational needs.",
       whoItsFor:
         "Healthcare leaders, clinics, and hospitals evaluating respiratory workflows, staffing models, or program support needs.",
       outcomes: [
-        "Operational insight grounded in respiratory practice",
-        "Clearer planning around staffing and care delivery",
-        "A direct line to specialized respiratory expertise",
+        "KPI development and operational oversight",
+        "Orientation, leadership development, and staff education",
+        "$112M in proven P&L improvement through throughput, readmission, and billing analysis",
       ],
     },
   ] satisfies Service[],
@@ -227,10 +227,10 @@ export const siteContent = {
     name: "Dustan Sprowl",
     title: "Founder, MBHA, RRT",
     summary:
-      "Dustan Sprowl is a results-driven healthcare leader with over 9 years of management experience and 19 years of critical care expertise. His background spans respiratory therapy, sleep, neurology, pulmonary lab oversight, and multi-site service leadership, with a strong emphasis on evidence-based practice, interdisciplinary team development, and high-accountability clinical operations.",
+      "Dustan Sprowl is a results-driven healthcare leader with over 9 years of management experience and more than 18 years of respiratory and critical care expertise. His background spans respiratory therapy, sleep, neurology, pulmonary lab oversight, and multi-site service leadership.",
     professionalSummary: [
       "Throughout his career, Dustan has focused on building gold-standard clinical protocols, standardizing operations, and improving both patient care and business performance. His leadership experience includes consolidating multi-site operations, optimizing staffing matrices, and supporting accreditation readiness across TJC, CMS, CLIA, and CAP environments.",
-      "He has led teams through service line expansion, workflow redesign, billing compliance recovery, and competency-based education initiatives, while maintaining elite retention rates above 95% and helping drive more than $112 million in financial growth.",
+      "He has led teams through service line expansion, workflow redesign, billing compliance recovery, throughput improvement, and readmission reduction initiatives, helping drive $112 million in proven P&L improvement through financial and billing analysis.",
     ],
     mission:
       "BRM Healthcare Solutions exists to give clinicians and healthcare organizations access to respiratory-focused leadership, operational discipline, and credentialing support grounded in real critical care experience. Clients can expect practical guidance, strong standards, and a partner who understands both bedside realities and executive accountability.",
@@ -247,7 +247,7 @@ export const siteContent = {
     highlights: [
       "Shared Director over Respiratory Therapy, Sleep, Neurology, and Pulmonary Lab operations across Overland Park Regional and Menorah Medical Center since April 2023.",
       "Led the consolidation of oversight operations across two major facilities to improve staffing matrix design, efficiency, and service alignment.",
-      "Supported more than $112 million in financial growth while sustaining retention rates above 95% and improving quality metrics by 36%.",
+      "Delivered $112 million in proven P&L improvement through financial analysis, throughput efficiency, readmission reduction, and billing analysis.",
       "Brought departments into billing and documentation compliance with CMS and Joint Commission standards across multiple facilities.",
       "Built operations guides, annual competency programs, and instructor-led training that improved onboarding, productivity, and clinical readiness.",
     ],

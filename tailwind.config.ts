@@ -9,15 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#16303b",
-        mist: "#f2f6f4",
-        sage: "#b7d0c0",
-        sea: "#2f6f68",
-        linen: "#fcfaf6",
-        sand: "#dcc9a3",
+        ink: "#18181b",
+        mist: "#f7ecef",
+        sage: "#f3c7cf",
+        sea: "#b21e35",
+        linen: "#fcf8f4",
+        sand: "#ead9dd",
+        steel: "#5f6673",
+        ember: "#7f1722",
+        cloud: "#fffdfb",
       },
       boxShadow: {
-        panel: "0 20px 45px rgba(22, 48, 59, 0.08)",
+        panel: "0 24px 60px rgba(113, 20, 32, 0.10)",
       },
       fontFamily: {
         sans: ['"Avenir Next"', "Manrope", "Segoe UI", "sans-serif"],
