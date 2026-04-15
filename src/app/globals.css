@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-linen text-ink antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgba(183, 208, 192, 0.3), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(220, 201, 163, 0.22), transparent 24%);
+}
+
+a,
+button,
+iframe {
+  @apply transition duration-200 ease-out;
+}
+
+::selection {
+  @apply bg-sea text-white;
+}
+
+.page-shell {
+  @apply relative overflow-hidden;
+}
+
+.section-frame {
+  @apply mx-auto w-full max-w-6xl px-6 py-16 md:px-10 md:py-24;
+}
+
+.panel {
+  @apply rounded-[2rem] border border-white/70 bg-white/85 shadow-panel backdrop-blur;
+}
+
+.eyebrow {
+  @apply text-xs font-semibold uppercase tracking-[0.24em] text-sea/75;
+}
+
+.title-balance {
+  text-wrap: balance;
+}
