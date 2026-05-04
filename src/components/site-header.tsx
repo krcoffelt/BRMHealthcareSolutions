@@ -24,7 +24,7 @@ export function SiteHeader() {
               alt="BRM Healthcare"
               width={1000}
               height={200}
-              className="h-auto w-[190px] object-contain sm:w-[240px] md:w-[300px]"
+              className="h-auto w-[225px] object-contain sm:w-[260px] md:w-[300px]"
               priority
             />
           </Link>
