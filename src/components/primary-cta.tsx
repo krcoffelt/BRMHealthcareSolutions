@@ -14,12 +14,12 @@ export function PrimaryCTA({
   className = "",
 }: PrimaryCTAProps) {
   const baseClasses =
-    "inline-flex items-center justify-center rounded-full px-6 py-3.5 text-sm font-semibold tracking-[0.08em] transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4";
+    "inline-flex items-center justify-center border px-7 py-3.5 text-xs font-bold uppercase tracking-[0.14em] transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4";
   const variants = {
     solid:
-      "bg-sea text-white shadow-float shadow-sea/20 hover:bg-ember focus-visible:outline-sea",
+      "border-sea bg-sea text-white shadow-float hover:bg-ember focus-visible:outline-sea",
     ghost:
-      "border border-bone/70 bg-white/90 text-ink hover:border-sea hover:text-sea focus-visible:outline-sea",
+      "border-white/70 bg-transparent text-white hover:border-white hover:bg-white hover:text-charcoal focus-visible:outline-sea",
   };
 
   return (

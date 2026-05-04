@@ -12,10 +12,7 @@ html {
 
 body {
   @apply bg-linen text-ink antialiased;
-  background:
-    radial-gradient(circle at top left, rgba(176, 18, 45, 0.14), transparent 28%),
-    radial-gradient(circle at top right, rgba(125, 13, 32, 0.08), transparent 24%),
-    linear-gradient(180deg, rgba(250, 250, 250, 0.96), rgba(255, 255, 255, 0.98) 38%, rgba(244, 242, 243, 0.94));
+  background: #0a0a0a;
 }
 
 a,
@@ -29,49 +26,23 @@ iframe {
 }
 
 .page-shell {
-  @apply relative overflow-hidden;
-}
-
-.page-shell::before,
-.page-shell::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  border-radius: 9999px;
-  filter: blur(90px);
-  opacity: 0.45;
-}
-
-.page-shell::before {
-  top: 4rem;
-  left: -7rem;
-  width: 18rem;
-  height: 18rem;
-  background: rgba(176, 18, 45, 0.13);
-}
-
-.page-shell::after {
-  top: 36rem;
-  right: -6rem;
-  width: 16rem;
-  height: 16rem;
-  background: rgba(125, 13, 32, 0.08);
+  @apply relative overflow-hidden bg-linen;
 }
 
 .section-frame {
-  @apply mx-auto w-full max-w-[1180px] px-5 py-14 md:px-8 md:py-20;
+  @apply mx-auto w-full max-w-[1260px] px-5 py-16 md:px-8 md:py-24;
 }
 
 .panel {
-  @apply rounded-[2rem] border border-bone bg-white shadow-panel backdrop-blur-sm;
+  @apply border border-bone bg-sand shadow-panel;
 }
 
 .glass-shell {
-  @apply border border-white bg-white shadow-panel backdrop-blur-xl;
+  @apply border-b border-bone bg-charcoal;
 }
 
 .eyebrow {
-  @apply text-[0.68rem] font-semibold uppercase tracking-[0.32em] text-sea;
+  @apply text-[0.68rem] font-bold uppercase tracking-[0.32em] text-sea;
 }
 
 .title-balance {
@@ -79,34 +50,27 @@ iframe {
 }
 
 .hero-grid {
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(247, 243, 244, 0.94)),
-    radial-gradient(circle at top right, rgba(176, 18, 45, 0.08), transparent 32%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  background: #0a0a0a;
 }
 
 .dark-band {
-  background:
-    radial-gradient(circle at top right, rgba(240, 213, 218, 0.14), transparent 24%),
-    linear-gradient(160deg, #1a1014, #09070a 58%, #050406);
+  background: #050505;
 }
 
 .data-panel {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 243, 244, 0.92)),
-    linear-gradient(90deg, rgba(176, 18, 45, 0.05), rgba(176, 18, 45, 0));
+  background: #131313;
 }
 
 .metric-card {
-  @apply rounded-[1.5rem] border border-bone bg-white p-5 shadow-[0_18px_36px_rgba(16,10,12,0.06)];
+  @apply border border-bone bg-sand p-5;
 }
 
 .soft-card {
-  @apply rounded-[1.5rem] border border-bone bg-cloud p-6;
+  @apply border border-bone bg-cloud p-6;
 }
 
 .table-shell {
-  @apply rounded-[1.75rem] border border-bone bg-cloud p-3;
+  @apply border border-bone bg-cloud p-3;
 }
 
 .table-shell table {
@@ -118,7 +82,69 @@ iframe {
 }
 
 .table-shell tbody tr {
-  @apply rounded-3xl bg-white align-top shadow-[0_12px_32px_rgba(16,10,12,0.05)];
+  @apply bg-sand align-top;
+}
+
+.hero-medical-image {
+  filter: grayscale(1) contrast(1.18) brightness(0.62);
+}
+
+.grid-plane {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.impact-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.impact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 72% 10%, rgba(230, 0, 0, 0.12), transparent 18rem),
+    radial-gradient(circle at 18% 85%, rgba(255, 255, 255, 0.05), transparent 16rem),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.98), rgba(4, 4, 4, 0.96));
+}
+
+.impact-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.24;
+  background:
+    linear-gradient(90deg, transparent 0 49.95%, rgba(255, 255, 255, 0.08) 50%, transparent 50.05%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.045) 0 1px, transparent 1px 9rem);
+}
+
+.impact-band-copy {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  padding-bottom: 2rem;
+}
+
+.impact-stat-grid {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.impact-stat-column {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+@media (min-width: 1024px) {
+  .impact-band-copy {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .impact-stat-grid {
+    border-top: 0;
+  }
 }
 
 .table-shell td,

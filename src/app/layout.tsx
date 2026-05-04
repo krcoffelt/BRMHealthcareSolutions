@@ -7,6 +7,9 @@ import { siteContent } from "@/content/site";
 export const metadata: Metadata = {
   title: `${siteContent.companyName} | ${siteContent.tagline}`,
   description: siteContent.description,
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

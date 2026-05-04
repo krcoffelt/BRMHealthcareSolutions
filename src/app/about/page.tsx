@@ -6,36 +6,16 @@ export default function AboutPage() {
   return (
     <>
       <section className="section-frame">
-        <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr]">
-          <div className="dark-band flex min-h-[420px] flex-col justify-between rounded-[2rem] p-8 text-white md:p-10">
-            <div>
-              <p className="eyebrow text-sage">Executive profile</p>
-              <p className="mt-5 font-display text-4xl">Dustan Sprowl</p>
-              <p className="mt-2 text-sm uppercase tracking-[0.16em] text-white/70">
-                Founder, MBHA, RRT
-              </p>
-            </div>
-            <div className="space-y-4">
-              <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-5 text-sm leading-7 text-white/76">
-                18+ years of respiratory and critical care experience.
-              </div>
-              <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-5 text-sm leading-7 text-white/76">
-                Leadership across respiratory therapy, sleep, neurology, pulmonary lab, radiology, and laboratory services.
-              </div>
-            </div>
-          </div>
-
-          <div className="panel p-8 md:p-10">
-            <p className="eyebrow">About Me</p>
-            <h1 className="mt-4 font-display text-5xl leading-tight text-ink">
-              {siteContent.founder.name}
-            </h1>
-            <p className="mt-3 text-sm uppercase tracking-[0.16em] text-sea/80">
-              {siteContent.founder.title}
-            </p>
-            <p className="mt-6 text-base leading-8 text-steel">{siteContent.founder.summary}</p>
-            <PrimaryCTA className="mt-8">Request a Consultation</PrimaryCTA>
-          </div>
+        <div className="panel p-8 md:p-10">
+          <p className="eyebrow">About Me</p>
+          <h1 className="mt-4 font-display text-5xl leading-tight text-ink">
+            {siteContent.founder.name}
+          </h1>
+          <p className="mt-3 text-sm uppercase tracking-[0.16em] text-sea/80">
+            {siteContent.founder.title}
+          </p>
+          <p className="mt-6 max-w-5xl text-base leading-8 text-steel">{siteContent.founder.summary}</p>
+          <PrimaryCTA className="mt-8">Request a Consultation</PrimaryCTA>
         </div>
       </section>
 
