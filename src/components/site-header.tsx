@@ -20,11 +20,11 @@ export function SiteHeader() {
             aria-label="BRM Healthcare home"
           >
             <Image
-              src="/brm-healthcare-logo.webp"
+              src="/brm-healthcare-logo-wide.png"
               alt="BRM Healthcare"
-              width={160}
-              height={160}
-              className="h-12 w-auto object-contain md:h-14"
+              width={1000}
+              height={200}
+              className="h-auto w-[190px] object-contain sm:w-[240px] md:w-[300px]"
               priority
             />
           </Link>
@@ -41,11 +41,11 @@ export function SiteHeader() {
             ))}
           </nav>
 
-          <PrimaryCTA className="hidden sm:inline-flex">Request a Consultation</PrimaryCTA>
+          <PrimaryCTA className="hidden sm:inline-flex">Schedule Meeting</PrimaryCTA>
 
           <button
             type="button"
-            className="inline-flex h-11 w-11 items-center justify-center border border-bone bg-sand text-white hover:border-sea hover:text-sea focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sea lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center border border-white bg-sea text-white hover:bg-ember focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sea lg:hidden"
             aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
@@ -78,7 +78,7 @@ export function SiteHeader() {
                 onClick={() => setIsOpen(false)}
                 className="mt-2 border border-sea bg-sea px-5 py-4 text-center font-display text-base font-black uppercase tracking-[0.12em] text-white hover:bg-ember focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sea"
               >
-                Request a Consultation
+                Schedule Meeting
               </Link>
             </nav>
           </div>

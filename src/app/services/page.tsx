@@ -41,7 +41,7 @@ export default function ServicesPage() {
           <p className="mt-3 max-w-3xl text-base leading-8 text-steel">
             BRM also brings proven P&amp;L improvement through financial analysis, throughput efficiency, readmission reduction, and billing analysis.
           </p>
-          <PrimaryCTA className="mt-8">Request a Consultation</PrimaryCTA>
+          <PrimaryCTA className="mt-8">Schedule Meeting</PrimaryCTA>
         </div>
 
         <div className="data-panel rounded-[2rem] border border-bone/50 p-8">

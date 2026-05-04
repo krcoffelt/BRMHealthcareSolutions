@@ -204,7 +204,7 @@ export default function HomePage() {
               {siteContent.hero.subheadline}
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-              <PrimaryCTA>Schedule Audit</PrimaryCTA>
+              <PrimaryCTA>Schedule Meeting</PrimaryCTA>
               <PrimaryCTA href="/services" variant="ghost">
                 View Impact
               </PrimaryCTA>
@@ -286,17 +286,17 @@ export default function HomePage() {
             </PrimaryCTA>
           </article>
 
-          <article className="border-l-4 border-sea bg-sand p-8 md:p-12">
+          <article className="border-l-4 border-sea bg-white p-8 md:p-12">
             <p className="eyebrow">Annual Professional Services Fee</p>
-            <h3 className="mt-5 font-display text-4xl font-black uppercase text-white">0-50 Beds</h3>
-            <p className="mt-6 font-display text-6xl font-black text-white">$7,500</p>
+            <h3 className="mt-5 font-display text-4xl font-black uppercase text-charcoal">0-50 Beds</h3>
+            <p className="mt-6 font-display text-6xl font-black text-charcoal">$7,500</p>
             <p className="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-steel">per year</p>
             <ul className="mt-8 space-y-4 text-sm leading-7 text-steel">
               <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 bg-sea" />Respiratory guideline review included</li>
               <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 bg-sea" />Supply review included</li>
               <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 bg-sea" />One annual onsite survey support included</li>
             </ul>
-            <PrimaryCTA href="/services" className="mt-10 w-full">Review Retainer Terms</PrimaryCTA>
+            <PrimaryCTA href="/services" className="mt-10 w-full bg-sea text-white hover:bg-charcoal">Review Retainer Terms</PrimaryCTA>
           </article>
         </div>
       </section>
@@ -323,9 +323,9 @@ export default function HomePage() {
       <section className="section-frame">
         <div className="border border-bone bg-bone">
           <div className="grid gap-px bg-bone lg:grid-cols-[1fr_0.72fr]">
-            <div className="bg-sand p-7 md:p-10 lg:p-12">
+            <div className="bg-white p-7 md:p-10 lg:p-12">
               <p className="eyebrow">Education Hub Coming Soon</p>
-              <h2 className="mt-5 max-w-4xl font-display text-3xl font-black uppercase leading-[1.02] text-white md:text-5xl">
+              <h2 className="mt-5 max-w-4xl font-display text-3xl font-black uppercase leading-[1.02] text-charcoal md:text-5xl">
                 A practical respiratory resource center is in development.
               </h2>
             </div>

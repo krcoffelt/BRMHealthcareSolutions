@@ -15,7 +15,7 @@ export default function AboutPage() {
             {siteContent.founder.title}
           </p>
           <p className="mt-6 max-w-5xl text-base leading-8 text-steel">{siteContent.founder.summary}</p>
-          <PrimaryCTA className="mt-8">Request a Consultation</PrimaryCTA>
+          <PrimaryCTA className="mt-8">Schedule Meeting</PrimaryCTA>
         </div>
       </section>
 

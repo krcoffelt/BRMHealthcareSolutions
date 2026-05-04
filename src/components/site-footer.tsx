@@ -5,11 +5,11 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-bone bg-charcoal text-white">
       <div className="mx-auto grid max-w-[1180px] gap-10 px-5 py-14 md:grid-cols-[1.45fr_0.8fr_0.95fr] md:px-8">
-        <div className="border border-bone bg-sand p-6">
-          <p className="font-display text-lg font-black uppercase tracking-[0.16em] text-white">
+        <div className="border border-white bg-white p-6 text-charcoal">
+          <p className="font-display text-lg font-black uppercase tracking-[0.16em] text-charcoal">
             BRM Healthcare
           </p>
-          <p className="mt-5 max-w-md text-sm leading-7 text-white/72">{siteContent.description}</p>
+          <p className="mt-5 max-w-md text-sm leading-7 text-steel">{siteContent.description}</p>
         </div>
 
         <div>
@@ -47,7 +47,7 @@ export function SiteFooter() {
               href="/book"
               className="inline-flex items-center border border-sea bg-sea px-5 py-3 text-xs font-bold uppercase tracking-[0.12em] text-white hover:bg-ember"
             >
-              Request a Consultation
+              Schedule Meeting
             </Link>
           </div>
         </div>

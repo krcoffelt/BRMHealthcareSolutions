@@ -221,7 +221,7 @@ export const siteContent = {
     title: "Ready to Elevate Your Respiratory Program?",
     description:
       "Let's talk about what BRM can do for your facility. Whether you need a one-time consultation or a full annual partnership, we'll build a plan around your specific needs and budget.",
-    buttonLabel: "Schedule Your Free Discovery Call",
+    buttonLabel: "Schedule Meeting",
     note: "All services available individually or as part of our annual retainer, starting at $7,500/year.",
   },
   feeSchedule: {
@@ -401,9 +401,9 @@ export const siteContent = {
   },
   contact: {
     email: "brmhealthcaresolutions@gmail.com",
-    phone: "(555) 555-0199",
+    phone: "(303) 435-7741",
     linkedin: "https://www.linkedin.com/company/brm-healthcare-solutions",
-    bookingTitle: "Schedule Your Free Discovery Call",
+    bookingTitle: "Schedule Meeting",
     bookingHours: "Monday through Friday, 9:00 AM to 5:00 PM",
   },
 };

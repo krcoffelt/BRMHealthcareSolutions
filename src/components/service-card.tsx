@@ -27,7 +27,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
         ))}
       </ul>
 
-      <PrimaryCTA className="mt-8 self-start">Request a Consultation</PrimaryCTA>
+      <PrimaryCTA className="mt-8 self-start">Schedule Meeting</PrimaryCTA>
     </article>
   );
 }
