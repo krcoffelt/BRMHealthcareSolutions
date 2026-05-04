@@ -9,7 +9,7 @@ export function SiteFooter() {
           <p className="font-display text-lg font-black uppercase tracking-[0.16em] text-charcoal">
             BRM Healthcare
           </p>
-          <p className="mt-5 max-w-md text-sm leading-7 text-steel">{siteContent.description}</p>
+          <p className="mt-5 max-w-md text-sm leading-7 text-black">{siteContent.description}</p>
         </div>
 
         <div>

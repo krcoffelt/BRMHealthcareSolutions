@@ -214,11 +214,8 @@ export default function HomePage() {
       </section>
 
       <section className="section-frame">
-        <div className="mb-12 grid gap-6 md:grid-cols-[1fr_0.8fr] md:items-end">
-          <SectionHeading eyebrow="Core Services" title="Elite service tiers for respiratory performance." />
-          <p className="max-w-xl text-base leading-8 text-steel md:justify-self-end md:text-right">
-            Specialized interventions designed to optimize clinical workflows, strengthen compliance, and eliminate operational inefficiencies.
-          </p>
+        <div className="mb-12">
+          <SectionHeading eyebrow="Core Services" title="Respiratory services built around facility needs." />
         </div>
 
         <div className="grid gap-px border border-bone bg-bone md:grid-cols-12">
@@ -238,10 +235,10 @@ export default function HomePage() {
       </section>
 
       <section className="impact-section border-y border-bone bg-[#030303]">
-        <div className="relative z-10 mx-auto grid w-full max-w-[1440px] gap-10 px-5 py-14 md:px-10 md:py-20 lg:grid-cols-[0.72fr_1.92fr] lg:items-center lg:px-16">
+        <div className="relative z-10 mx-auto grid w-full max-w-[1520px] gap-10 px-5 py-14 md:px-10 md:py-20 lg:grid-cols-[minmax(230px,0.58fr)_minmax(0,2.12fr)] lg:items-center lg:gap-8 lg:px-12 xl:gap-12 xl:px-16">
           <div className="impact-band-copy">
             <p className="eyebrow">Our Impact</p>
-            <h2 className="mt-5 font-display text-4xl font-black leading-[1.04] text-white md:text-5xl">
+            <h2 className="mt-5 font-display text-4xl font-black leading-[1.04] text-white md:text-5xl lg:text-[clamp(2.75rem,3.1vw,3.5rem)]">
               Measurable Results.
               <span className="mt-2 block text-sea">Real Value.</span>
             </h2>
@@ -249,14 +246,14 @@ export default function HomePage() {
 
           <div className="impact-stat-grid grid grid-cols-2 gap-px border-white/20 lg:grid-cols-4 lg:border-l">
             {impactStats.map((metric) => (
-              <article key={metric.value} className="impact-stat-column flex flex-col items-center px-3 py-5 text-center sm:px-4 md:px-6 lg:border-r lg:border-white/20">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-sea text-white shadow-[0_0_30px_rgba(230,0,0,0.42)] sm:h-[4.5rem] sm:w-[4.5rem] md:h-20 md:w-20">
+              <article key={metric.value} className="impact-stat-column flex min-w-0 flex-col items-center px-3 py-5 text-center sm:px-4 md:px-6 lg:border-r lg:border-white/20 lg:px-4 lg:py-7 xl:px-6">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sea text-white shadow-[0_0_30px_rgba(230,0,0,0.42)] sm:h-[4.5rem] sm:w-[4.5rem] md:h-20 md:w-20 lg:h-[4.5rem] lg:w-[4.5rem] xl:h-20 xl:w-20">
                   <ImpactIcon name={metric.icon} />
                 </div>
-                <p className="mt-5 whitespace-nowrap font-display text-3xl font-black leading-none text-white sm:text-5xl md:text-[3.35rem]">
+                <p className="mt-5 whitespace-nowrap font-display text-3xl font-black leading-none text-white sm:text-5xl md:text-[3.35rem] lg:text-[clamp(2.35rem,3.25vw,3.35rem)]">
                   {metric.value}
                 </p>
-                <p className="mt-3 max-w-[10rem] text-xs font-bold leading-5 text-white/80 sm:text-sm md:text-base md:leading-6">
+                <p className="mt-3 max-w-[10rem] text-xs font-bold leading-5 text-white/80 sm:text-sm md:text-base md:leading-6 lg:max-w-[9.5rem] lg:text-[0.95rem] xl:max-w-[10.75rem]">
                   {metric.label}
                 </p>
               </article>
@@ -268,7 +265,7 @@ export default function HomePage() {
       <section className="section-frame">
         <SectionHeading
           eyebrow="Leadership Pricing"
-          title="Transparent investment structures for facilities of every scale."
+          title="Pricing for 0-50 bed facilities."
           align="center"
         />
 
@@ -276,7 +273,7 @@ export default function HomePage() {
           <article className="bg-linen p-8 md:p-12">
             <p className="eyebrow">For specific interventions</p>
             <h3 className="mt-5 font-display text-4xl font-black uppercase text-white">A la carte</h3>
-            <ul className="mt-8 space-y-4 text-sm leading-7 text-steel">
+            <ul className="mt-8 space-y-4 text-sm leading-7 text-black">
               <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 bg-sea" />Agency staffing: $100/hr when available</li>
               <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 bg-sea" />General consultation: $200/hr with 1-hour minimum</li>
               <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 bg-sea" />General patient consultation: $50/pt</li>
@@ -306,7 +303,7 @@ export default function HomePage() {
           <div>
             <p className="eyebrow">Practitioner Operator</p>
             <h2 className="title-balance mt-5 font-display text-4xl font-black uppercase leading-none text-white md:text-6xl">
-              The experience your patients deserve. The efficiency your organization requires.
+              The experience your patients deserve.
             </h2>
             <div className="mt-7 max-w-2xl space-y-5 text-base leading-8 text-steel">
               {siteContent.aboutSection.paragraphs.map((paragraph) => (
