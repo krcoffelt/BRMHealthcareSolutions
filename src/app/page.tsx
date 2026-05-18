@@ -90,6 +90,35 @@ const impactStats = [
   icon: "trend" | "calendar" | "people" | "shield";
 }>;
 
+const servicePathways = [
+  {
+    eyebrow: "Clinic / Hospital / Practice",
+    title: "Facility respiratory support",
+    description:
+      "Operational consulting, agency staffing, accreditation readiness, education, and interim respiratory leadership for healthcare organizations.",
+    items: [
+      "Respiratory department review and workflow optimization",
+      "Staffing support and critical care credentialing",
+      "Survey readiness, documentation, and compliance review",
+    ],
+    cta: "View Facility Services",
+    href: "/services",
+  },
+  {
+    eyebrow: "Personal / Individual",
+    title: "Family & friend consultation",
+    description:
+      "Private guidance for families who need a respiratory-care professional to help clarify questions about a loved one's care plan.",
+    items: [
+      "Oxygen, tracheostomy, discharge, or equipment questions",
+      "Care-plan questions before or after a facility stay",
+      "Plain-language guidance before the next clinical conversation",
+    ],
+    cta: "Explore Private Care",
+    href: "/family-consultation",
+  },
+];
+
 function ServiceIcon({ name }: { name: ServiceIconName }) {
   const iconClass = "h-6 w-6";
 
@@ -264,37 +293,35 @@ export default function HomePage() {
 
       <section className="section-frame">
         <SectionHeading
-          eyebrow="Leadership Pricing"
-          title="Pricing for 0-50 bed facilities."
+          eyebrow="Service Pathways"
+          title="Choose the support that matches the need."
           align="center"
         />
 
         <div className="mx-auto mt-14 grid max-w-5xl gap-px border border-bone bg-bone md:grid-cols-2">
-          <article className="bg-linen p-8 md:p-12">
-            <p className="eyebrow">For specific interventions</p>
-            <h3 className="mt-5 font-display text-4xl font-black uppercase text-white">A la carte</h3>
-            <ul className="mt-8 space-y-4 text-sm leading-7 text-black">
-              <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 bg-sea" />Agency staffing: $100/hr when available</li>
-              <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 bg-sea" />General consultation: $200/hr with 1-hour minimum</li>
-              <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 bg-sea" />General patient consultation: $50/pt</li>
-            </ul>
-            <PrimaryCTA href="/services" variant="ghost" className="mt-10 w-full">
-              View Full Fee Schedule
-            </PrimaryCTA>
-          </article>
-
-          <article className="border-l-4 border-sea bg-white p-8 md:p-12">
-            <p className="eyebrow">Annual Professional Services Fee</p>
-            <h3 className="mt-5 font-display text-4xl font-black uppercase text-charcoal">0-50 Beds</h3>
-            <p className="mt-6 font-display text-6xl font-black text-charcoal">$7,500</p>
-            <p className="mt-1 text-xs font-bold uppercase tracking-[0.14em] text-steel">per year</p>
-            <ul className="mt-8 space-y-4 text-sm leading-7 text-steel">
-              <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 bg-sea" />Respiratory guideline review included</li>
-              <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 bg-sea" />Supply review included</li>
-              <li className="flex gap-3"><span className="mt-2 h-2.5 w-2.5 bg-sea" />One annual onsite survey support included</li>
-            </ul>
-            <PrimaryCTA href="/services" className="mt-10 w-full bg-sea text-white hover:bg-charcoal">Review Retainer Terms</PrimaryCTA>
-          </article>
+          {servicePathways.map((pathway, index) => (
+            <article
+              key={pathway.title}
+              className={`p-8 text-white md:p-12 ${index === 0 ? "bg-linen" : "border-l-4 border-sea bg-charcoal"}`}
+            >
+              <p className="eyebrow">{pathway.eyebrow}</p>
+              <h3 className="mt-5 font-display text-4xl font-black uppercase leading-tight text-white">
+                {pathway.title}
+              </h3>
+              <p className="mt-5 text-sm leading-7 text-white/78">{pathway.description}</p>
+              <ul className="mt-8 space-y-4 text-sm leading-7 text-white">
+                {pathway.items.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-2.5 w-2.5 shrink-0 bg-sea" aria-hidden="true" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <PrimaryCTA href={pathway.href} variant="ghost" className="mt-10 w-full">
+                {pathway.cta}
+              </PrimaryCTA>
+            </article>
+          ))}
         </div>
       </section>
 

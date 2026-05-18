@@ -24,24 +24,32 @@ export function SiteHeader() {
               alt="BRM Healthcare"
               width={1000}
               height={200}
-              className="h-auto w-[225px] object-contain sm:w-[260px] md:w-[300px]"
+              className="h-auto w-[225px] object-contain sm:w-[260px] md:w-[280px] xl:w-[300px]"
               priority
             />
           </Link>
 
-          <nav aria-label="Primary" className="hidden items-center gap-8 lg:flex">
+          <nav aria-label="Primary" className="hidden items-center gap-5 lg:flex xl:gap-7">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="font-display text-xs font-bold uppercase tracking-[0.08em] text-white hover:text-sea focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sea"
+                className="font-display text-[0.68rem] font-bold uppercase tracking-[0.08em] text-white hover:text-sea focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sea xl:text-xs"
               >
                 {item.label}
               </Link>
             ))}
           </nav>
 
-          <PrimaryCTA className="hidden sm:inline-flex">Schedule Meeting</PrimaryCTA>
+          <div className="hidden items-center gap-3 xl:flex">
+            <Link
+              href="/family-consultation"
+              className="inline-flex items-center justify-center border border-white/70 px-5 py-3 text-[0.68rem] font-bold uppercase tracking-[0.12em] text-white hover:border-sea hover:bg-sea focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sea"
+            >
+              Family & Friend Consult
+            </Link>
+            <PrimaryCTA>Schedule Meeting</PrimaryCTA>
+          </div>
 
           <button
             type="button"
@@ -73,6 +81,13 @@ export function SiteHeader() {
                   {item.label}
                 </Link>
               ))}
+              <Link
+                href="/family-consultation"
+                onClick={() => setIsOpen(false)}
+                className="border border-white bg-white px-5 py-4 text-center font-display text-base font-black uppercase tracking-[0.12em] text-charcoal hover:border-sea hover:text-sea focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sea"
+              >
+                Family & Friend Consult
+              </Link>
               <Link
                 href="/book"
                 onClick={() => setIsOpen(false)}

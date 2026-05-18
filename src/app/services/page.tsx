@@ -3,6 +3,29 @@ import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
 import { siteContent } from "@/content/site";
 
+const serviceOfferings = [
+  {
+    title: "Direct Professional Support",
+    description:
+      "Short-term support for specific facility needs, education requests, staffing discussions, and clinical consultation.",
+    items: [
+      "Agency staffing conversations for ICU, ER, PICU, and NICU settings",
+      "BLS, ACLS, CEU, equipment, tracheostomy, and oxygen therapy education",
+      "General consultation and private patient or family-care guidance",
+    ],
+  },
+  {
+    title: "Facility Programs",
+    description:
+      "Broader operational programs scoped after discovery for facilities that need sustained respiratory leadership support.",
+    items: [
+      "Guideline review, supply review, survey readiness, and compliance support",
+      "Interim leadership, leadership development, and staff competency programs",
+      "Charge analysis, throughput strategy, readmission reduction, and service-line planning",
+    ],
+  },
+];
+
 export default function ServicesPage() {
   return (
     <div className="section-frame">
@@ -56,74 +79,26 @@ export default function ServicesPage() {
 
       <section className="mt-12">
         <SectionHeading
-          eyebrow="Fee Schedule"
-          title={siteContent.feeSchedule.bedRangeLabel}
-          description="Current professional services and program fees."
+          eyebrow="Services Offered"
+          title="Two ways BRM can support your team."
+          description="Specific scope and investment are reviewed directly after an in-person or discovery meeting."
         />
 
-        <div className="mt-8 panel p-8 md:p-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sea/75">
-            Individual professional services
-          </p>
-          <p className="mt-3 text-sm leading-7 text-steel">{siteContent.feeSchedule.note}</p>
-
-          <div className="table-shell mt-6 overflow-x-auto">
-            <table>
-              <thead>
-                <tr>
-                  <th className="pb-2 pr-4">Service / Class</th>
-                  <th className="pb-2 pr-4">Individual Price</th>
-                  <th className="pb-2">Annual Retainer Plan</th>
-                </tr>
-              </thead>
-              <tbody>
-                {siteContent.feeSchedule.individualServices.map((item) => (
-                  <tr key={item.service}>
-                    <td className="rounded-l-3xl px-5 py-4">{item.service}</td>
-                    <td className="px-5 py-4 whitespace-nowrap">{item.price}</td>
-                    <td className="rounded-r-3xl px-5 py-4 whitespace-nowrap">{item.retainer}</td>
-                  </tr>
+        <div className="mt-8 grid gap-px border border-bone bg-bone lg:grid-cols-2">
+          {serviceOfferings.map((offering) => (
+            <article key={offering.title} className="bg-linen p-8 text-white md:p-10">
+              <h3 className="font-display text-3xl font-black uppercase leading-tight">{offering.title}</h3>
+              <p className="mt-4 text-sm leading-7 text-white/76">{offering.description}</p>
+              <ul className="mt-7 space-y-4 text-sm leading-7 text-white">
+                {offering.items.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-2.5 w-2.5 shrink-0 bg-sea" aria-hidden="true" />
+                    <span>{item}</span>
+                  </li>
                 ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div className="mt-6 panel p-8 md:p-10">
-          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sea/75">
-                Facility professional services and programs
-              </p>
-              <p className="mt-3 text-sm leading-7 text-steel">
-                Estimated hours and annual retainer terms.
-              </p>
-            </div>
-            <div className="rounded-full border border-bone/60 bg-mist px-5 py-3 text-sm font-semibold text-ink">
-              Annual Professional Services Fee: {siteContent.feeSchedule.annualProfessionalServicesFee}
-            </div>
-          </div>
-
-          <div className="table-shell mt-6 overflow-x-auto">
-            <table>
-              <thead>
-                <tr>
-                  <th className="pb-2 pr-4">Service / Program</th>
-                  <th className="pb-2 pr-4">Estimated Hours</th>
-                  <th className="pb-2">Annual Retainer Plan</th>
-                </tr>
-              </thead>
-              <tbody>
-                {siteContent.feeSchedule.facilityPrograms.map((item) => (
-                  <tr key={item.service}>
-                    <td className="rounded-l-3xl px-5 py-4">{item.service}</td>
-                    <td className="px-5 py-4 whitespace-nowrap">{item.estimatedHours}</td>
-                    <td className="rounded-r-3xl px-5 py-4 whitespace-nowrap">{item.retainer}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+              </ul>
+            </article>
+          ))}
         </div>
       </section>
     </div>

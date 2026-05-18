@@ -37,11 +37,12 @@ export const siteContent = {
   companyName: "BRM Healthcare Solutions",
   tagline: "Respiratory Consulting, Agency Staffing, and Critical Care Credentialing",
   description:
-    "Experienced respiratory consulting, agency staffing, education, and critical care credentialing support for facilities that need stronger clinical and financial performance.",
+    "Respiratory consulting, agency staffing, BLS and ACLS education, private family consultation, and critical care credentialing support for facilities and individuals.",
   navItems: [
     { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
     { href: "/education", label: "Education" },
+    { href: "/bls-acls", label: "BLS / ACLS" },
     { href: "/about", label: "About Me" },
     { href: "/book", label: "Book" },
   ] satisfies NavItem[],
