@@ -29,7 +29,6 @@ export function SiteFooter() {
           <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sea">Contact</p>
           <ul className="mt-4 space-y-3 text-sm text-white/72">
             <li>{siteContent.contact.email}</li>
-            <li>{siteContent.contact.phone}</li>
             <li>{siteContent.contact.bookingHours}</li>
             <li>
               <a

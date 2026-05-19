@@ -214,7 +214,7 @@ export const siteContent = {
   aboutSection: {
     title: "The Experience Your Patients Deserve. The Efficiency Your Organization Requires.",
     paragraphs: [
-      "BRM Healthcare Solutions was founded on a simple premise: respiratory leadership should not be a gap in your operations. With over 18 years of critical care experience spanning community hospitals, rehabilitation facilities, and major regional medical centers, BRM brings a track record that speaks for itself.",
+      "BRM Healthcare Solutions was founded on a simple premise: respiratory operations should not be a gap in your facility. With over 18 years of critical care experience spanning community hospitals, rehabilitation facilities, and major regional medical centers, BRM brings a track record that speaks for itself.",
       "We've helped facilities restore CMS billing compliance, build service lines from the ground up, and achieve elite accreditation standards. BRM brings the expertise of a full-time director at a fraction of the cost, with the flexibility your facility needs to grow.",
     ],
   },
