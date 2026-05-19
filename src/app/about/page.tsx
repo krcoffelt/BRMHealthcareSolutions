@@ -99,7 +99,7 @@ export default function AboutPage() {
                 Resume source
               </p>
               <p className="mt-3 text-sm leading-7 text-steel">
-                Based on Dustan Sprowl&apos;s 2026 updated resume.
+                Based on the 2026 updated resume for Dustan Sprowls.
               </p>
             </div>
           </div>

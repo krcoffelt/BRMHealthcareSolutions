@@ -360,10 +360,10 @@ export const siteContent = {
     bedRangeLabel: "0-50 Beds Fee Schedule",
   },
   founder: {
-    name: "Dustan Sprowl",
+    name: "Dustan Sprowls",
     title: "Founder, MBHA, RRT",
     summary:
-      "Dustan Sprowl is a results-driven healthcare leader with over 9 years of management experience and more than 18 years of respiratory and critical care expertise. His background spans respiratory therapy, sleep, neurology, pulmonary lab oversight, and multi-site service leadership.",
+      "Dustan Sprowls is a results-driven healthcare leader with over 9 years of management experience and more than 18 years of respiratory and critical care expertise. His background spans respiratory therapy, sleep, neurology, pulmonary lab oversight, and multi-site service leadership.",
     professionalSummary: [
       "Throughout his career, Dustan has focused on building gold-standard clinical protocols, standardizing operations, and improving both patient care and business performance. His leadership experience includes consolidating multi-site operations, optimizing staffing matrices, and supporting accreditation readiness across TJC, CMS, CLIA, and CAP environments.",
       "He has led teams through service line expansion, workflow redesign, billing compliance recovery, throughput improvement, and readmission reduction initiatives, helping drive $112 million in proven P&L improvement through financial and billing analysis.",
