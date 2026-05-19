@@ -47,7 +47,7 @@ export const siteContent = {
     { href: "/book", label: "Book" },
   ] satisfies NavItem[],
   hero: {
-    title: "Elite Respiratory Leadership. Proven Results. No Overhead.",
+    title: "Elite Respiratory Operations. Proven Results. Improved Profit & Loss. Impactful Education.",
     subheadline:
       "BRM Healthcare Solutions delivers experienced respiratory consulting, agency staffing, and critical care credentialing so your facility gets the expertise of a seasoned director without the full-time cost.",
     supportingLine:

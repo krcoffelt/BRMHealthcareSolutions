@@ -3,7 +3,7 @@ import { PrimaryCTA } from "@/components/primary-cta";
 import { SectionHeading } from "@/components/section-heading";
 import { siteContent } from "@/content/site";
 
-type ServiceIconName = "audit" | "staffing" | "compliance" | "education" | "leadership";
+type ServiceIconName = "audit" | "staffing" | "compliance" | "education" | "nursing" | "leadership";
 
 const serviceTiles = [
   {
@@ -11,14 +11,14 @@ const serviceTiles = [
     description:
       "Respiratory department audits, protocol development, KPI tracking, and operational roadmaps built for clinical and financial performance.",
     icon: "audit",
-    className: "md:col-span-8",
+    className: "md:col-span-6",
   },
   {
     title: "Elite Staffing",
     description:
       "Experienced respiratory coverage across ICU, ER, PICU, and NICU settings when your facility needs dependable support.",
     icon: "staffing",
-    className: "md:col-span-4",
+    className: "md:col-span-6",
   },
   {
     title: "Compliance",
@@ -40,6 +40,13 @@ const serviceTiles = [
       "Embedded fractional directors who bring executive respiratory governance without full-time executive overhead.",
     icon: "leadership",
     className: "bg-sea md:col-span-4",
+  },
+  {
+    title: "Nursing Services",
+    description:
+      "Emergency wound and critical care education with nursing operations.",
+    icon: "nursing",
+    className: "md:col-span-8",
   },
 ] satisfies Array<{
   title: string;
@@ -70,8 +77,8 @@ const impactStats = [
     icon: "trend",
   },
   {
-    value: "2-3",
-    label: "Months to Typical ROI",
+    value: "36%",
+    label: "KPI Improvement",
     icon: "calendar",
   },
   {
@@ -80,8 +87,8 @@ const impactStats = [
     icon: "people",
   },
   {
-    value: "18+",
-    label: "Years of Critical Care & Respiratory Leadership",
+    value: "0.7 Day",
+    label: "Reduction in LOS Per Patient",
     icon: "shield",
   },
 ] satisfies Array<{
@@ -114,7 +121,7 @@ const servicePathways = [
       "Care-plan questions before or after a facility stay",
       "Plain-language guidance before the next clinical conversation",
     ],
-    cta: "Explore Private Care",
+    cta: "Start $50 Consultation",
     href: "/family-consultation",
   },
 ];
@@ -151,6 +158,14 @@ function ServiceIcon({ name }: { name: ServiceIconName }) {
           <path d="M3 5h6.5A3.5 3.5 0 0 1 13 8.5V20a3.5 3.5 0 0 0-3.5-3.5H3V5Z" stroke="currentColor" strokeWidth="2" />
           <path d="M21 5h-6.5A3.5 3.5 0 0 0 11 8.5V20a3.5 3.5 0 0 1 3.5-3.5H21V5Z" stroke="currentColor" strokeWidth="2" />
           <path d="M7 9h2M7 12h2M17 9h-2M17 12h-2" stroke="currentColor" strokeWidth="2" strokeLinecap="square" />
+        </svg>
+      );
+    case "nursing":
+      return (
+        <svg className={iconClass} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 4v16M4 12h16" stroke="currentColor" strokeWidth="2" strokeLinecap="square" />
+          <path d="M6 6h12v12H6V6Z" stroke="currentColor" strokeWidth="2" />
+          <path d="M8 3h8M8 21h8" stroke="currentColor" strokeWidth="2" strokeLinecap="square" />
         </svg>
       );
     case "leadership":
@@ -226,8 +241,10 @@ export default function HomePage() {
           <div className="max-w-4xl animate-[rise-in_0.7s_ease-out_both]">
             <p className="eyebrow">Fractional Respiratory Leadership</p>
             <h1 className="title-balance mt-6 font-display text-5xl font-black uppercase leading-[0.92] text-white md:text-7xl lg:text-[5.8rem]">
-              Elite Respiratory Leadership.{" "}
-              <span className="text-sea">Proven Results.</span> No Overhead.
+              Elite Respiratory Operations.
+              <span className="block text-sea">Proven Results.</span>
+              <span className="block">Improved Profit &amp; Loss.</span>
+              <span className="block text-sea">Impactful Education.</span>
             </h1>
             <p className="mt-7 max-w-2xl border-l-4 border-sea pl-6 text-base leading-8 text-steel md:text-lg">
               {siteContent.hero.subheadline}
@@ -239,27 +256,6 @@ export default function HomePage() {
               </PrimaryCTA>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="section-frame">
-        <div className="mb-12">
-          <SectionHeading eyebrow="Core Services" title="Respiratory services built around facility needs." />
-        </div>
-
-        <div className="grid gap-px border border-bone bg-bone md:grid-cols-12">
-          {serviceTiles.map((service) => (
-            <article
-              key={service.title}
-              className={`group min-h-[250px] bg-sand p-7 transition hover:bg-[#2a2a2a] md:p-10 ${service.className}`}
-            >
-              <div className="mb-8 flex h-11 w-11 items-center justify-center bg-sea text-white group-hover:bg-white group-hover:text-charcoal">
-                <ServiceIcon name={service.icon} />
-              </div>
-              <h3 className="font-display text-2xl font-bold uppercase text-white">{service.title}</h3>
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-steel">{service.description}</p>
-            </article>
-          ))}
         </div>
       </section>
 
@@ -292,6 +288,27 @@ export default function HomePage() {
       </section>
 
       <section className="section-frame">
+        <div className="mb-12">
+          <SectionHeading eyebrow="Core Services" title="Respiratory & Nursing Services Built Around Facility Needs." />
+        </div>
+
+        <div className="grid gap-px border border-bone bg-bone md:grid-cols-12">
+          {serviceTiles.map((service) => (
+            <article
+              key={service.title}
+              className={`group min-h-[250px] bg-sand p-7 transition hover:bg-[#2a2a2a] md:p-10 ${service.className}`}
+            >
+              <div className="mb-8 flex h-11 w-11 items-center justify-center bg-sea text-white group-hover:bg-white group-hover:text-charcoal">
+                <ServiceIcon name={service.icon} />
+              </div>
+              <h3 className="font-display text-2xl font-bold uppercase text-white">{service.title}</h3>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-steel">{service.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section-frame">
         <SectionHeading
           eyebrow="Service Pathways"
           title="Choose the support that matches the need."
@@ -302,14 +319,14 @@ export default function HomePage() {
           {servicePathways.map((pathway, index) => (
             <article
               key={pathway.title}
-              className={`p-8 text-white md:p-12 ${index === 0 ? "bg-linen" : "border-l-4 border-sea bg-charcoal"}`}
+              className={`p-8 md:p-12 ${index === 0 ? "bg-linen text-white" : "border-l-4 border-sea bg-white text-charcoal"}`}
             >
               <p className="eyebrow">{pathway.eyebrow}</p>
-              <h3 className="mt-5 font-display text-4xl font-black uppercase leading-tight text-white">
+              <h3 className={`mt-5 font-display text-4xl font-black uppercase leading-tight ${index === 0 ? "text-white" : "text-charcoal"}`}>
                 {pathway.title}
               </h3>
-              <p className="mt-5 text-sm leading-7 text-white/78">{pathway.description}</p>
-              <ul className="mt-8 space-y-4 text-sm leading-7 text-white">
+              <p className={`mt-5 text-sm leading-7 ${index === 0 ? "text-white/78" : "text-black/72"}`}>{pathway.description}</p>
+              <ul className={`mt-8 space-y-4 text-sm leading-7 ${index === 0 ? "text-white" : "text-black"}`}>
                 {pathway.items.map((item) => (
                   <li key={item} className="flex gap-3">
                     <span className="mt-2 h-2.5 w-2.5 shrink-0 bg-sea" aria-hidden="true" />
@@ -317,7 +334,7 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-              <PrimaryCTA href={pathway.href} variant="ghost" className="mt-10 w-full">
+              <PrimaryCTA href={pathway.href} variant={index === 0 ? "ghost" : "solid"} className="mt-10 w-full">
                 {pathway.cta}
               </PrimaryCTA>
             </article>
