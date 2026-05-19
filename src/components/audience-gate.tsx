@@ -5,17 +5,24 @@ import { useEffect, useState } from "react";
 
 const STORAGE_KEY = "brm-audience-path";
 
+function getTodayKey() {
+  return new Date().toLocaleDateString("en-CA");
+}
+
 export function AudienceGate() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (!window.localStorage.getItem(STORAGE_KEY)) {
+    const lastSelection = window.localStorage.getItem(STORAGE_KEY);
+    const today = getTodayKey();
+
+    if (!lastSelection?.startsWith(`${today}:`)) {
       setIsVisible(true);
     }
   }, []);
 
   function chooseAudience(value: string) {
-    window.localStorage.setItem(STORAGE_KEY, value);
+    window.localStorage.setItem(STORAGE_KEY, `${getTodayKey()}:${value}`);
     setIsVisible(false);
   }
 
@@ -69,6 +76,9 @@ export function AudienceGate() {
             <h3 className="mt-4 font-display text-3xl font-black uppercase leading-tight">
               Family care guidance
             </h3>
+            <p className="mt-4 text-xs font-black uppercase tracking-[0.18em] text-sea">
+              Neonatal, Pediatric, Adult
+            </p>
             <p className="mt-4 text-sm leading-7 text-black/72">
               Private respiratory care explanations for personal use including diagnosis, explanations, discharge oxygen equipment and care planning. *Not a provider
             </p>
