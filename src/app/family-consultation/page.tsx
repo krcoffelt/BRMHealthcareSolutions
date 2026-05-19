@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PrimaryCTA } from "@/components/primary-cta";
 import { SectionHeading } from "@/components/section-heading";
-import { siteContent } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Family & Friend Respiratory Consultation",
@@ -15,6 +14,7 @@ const useCases = [
   "You need help understanding respiratory terminology, orders, or next questions to ask the care team.",
   "Your family wants a practical second conversation before making a care decision.",
   "You need help preparing for a facility meeting, home-care transition, or follow-up appointment.",
+  "Not a nurse practitioner, physician assistant, MD, DO, or licensed provider. Consultation and education will come from a licensed Respiratory Therapist or Registered Nurse.",
 ];
 
 const boundaries = [
@@ -37,9 +37,6 @@ export default function FamilyConsultationPage() {
           </p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <PrimaryCTA href="/book?service=family-consultation">Start $50 Consultation Request</PrimaryCTA>
-            <PrimaryCTA href={`mailto:${siteContent.contact.email}?subject=Family%20and%20Friend%20Consultation`} variant="ghost">
-              Email BRM
-            </PrimaryCTA>
           </div>
         </div>
 
@@ -50,7 +47,7 @@ export default function FamilyConsultationPage() {
             For one private patient or family-care question reviewed by BRM. Payment and automated text notification can be connected through a payment provider.
           </p>
           <div className="mt-7 border-l-4 border-sea pl-5 text-sm leading-7 text-black/72">
-            After the request is submitted, BRM will follow up by phone or email using the contact information provided.
+            BRM will follow up with the preferred method.
           </div>
         </div>
       </section>

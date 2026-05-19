@@ -54,7 +54,7 @@ export function AudienceGate() {
               Facility support
             </h3>
             <p className="mt-4 text-sm leading-7 text-white/72">
-              Consulting, staffing, education, survey readiness, and respiratory leadership for healthcare teams.
+              Consulting, staffing, education, survey readiness, and operations for healthcare teams.
             </p>
           </Link>
 
@@ -70,7 +70,7 @@ export function AudienceGate() {
               Family care guidance
             </h3>
             <p className="mt-4 text-sm leading-7 text-black/72">
-              Private respiratory-care questions for a loved one, including discharge, oxygen, equipment, and care planning.
+              Private respiratory care explanations for personal use including diagnosis, explanations, discharge oxygen equipment and care planning. *Not a provider
             </p>
           </Link>
         </div>
