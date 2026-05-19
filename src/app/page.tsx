@@ -14,11 +14,18 @@ const serviceTiles = [
     className: "md:col-span-6",
   },
   {
+    title: "Nursing Services",
+    description:
+      "Emergency wound and critical care education with nursing operations.",
+    icon: "nursing",
+    className: "md:col-span-6",
+  },
+  {
     title: "Elite Staffing",
     description:
       "Experienced respiratory coverage across ICU, ER, PICU, and NICU settings when your facility needs dependable support.",
     icon: "staffing",
-    className: "md:col-span-6",
+    className: "md:col-span-12",
   },
   {
     title: "Compliance",
@@ -40,13 +47,6 @@ const serviceTiles = [
       "Embedded fractional directors who bring executive respiratory governance without full-time executive overhead.",
     icon: "leadership",
     className: "bg-sea md:col-span-4",
-  },
-  {
-    title: "Nursing Services",
-    description:
-      "Emergency wound and critical care education with nursing operations.",
-    icon: "nursing",
-    className: "md:col-span-8",
   },
 ] satisfies Array<{
   title: string;

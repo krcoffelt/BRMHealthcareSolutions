@@ -127,6 +127,18 @@ export const siteContent = {
       ],
     },
     {
+      title: "Nursing Education & Operations",
+      description:
+        "Emergency wound education, critical care education, nursing operations support, and LOS strategy for teams that need stronger bedside consistency and measurable performance improvement.",
+      whoItsFor:
+        "Facilities that need registered nurses, performance improvement, practical education, and improved development of clinical skillsets.",
+      outcomes: [
+        "Emergency wound and critical care education",
+        "Nursing operations support and LOS strategy",
+        "Registered nurse skillset development and performance improvement",
+      ],
+    },
+    {
       title: "Interim & Agency Staffing",
       description:
         "Credentialed respiratory therapists are available across ICU, ER, PICU, and NICU settings with 24-hour lead time when available.",
