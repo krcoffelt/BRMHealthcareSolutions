@@ -31,26 +31,13 @@ export default function BookPage() {
 
         <CalendlyEmbed url={calendlyUrl} />
 
-        <div className="mt-8 panel grid gap-6 p-8 md:grid-cols-2">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sea/75">
-              Booking guidance
-            </p>
-            <p className="mt-4 text-sm leading-7 text-steel">
-              Use one 30-minute event type with Google Meet and basic intake questions.
-            </p>
-          </div>
-
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sea/75">
-              Fallback contact
-            </p>
-            <ul className="mt-4 space-y-3 text-sm leading-7 text-steel">
-              <li>{siteContent.contact.email}</li>
-              <li>{siteContent.contact.phone}</li>
-              <li>{siteContent.contact.bookingHours}</li>
-            </ul>
-          </div>
+        <div className="mt-8 panel p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sea/75">
+            Prefer email?
+          </p>
+          <p className="mt-4 text-sm leading-7 text-steel">
+            {siteContent.contact.email}
+          </p>
         </div>
       </div>
     </div>

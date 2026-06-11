@@ -1,5 +1,4 @@
 import { PrimaryCTA } from "@/components/primary-cta";
-import { SectionHeading } from "@/components/section-heading";
 import { siteContent } from "@/content/site";
 
 export default function AboutPage() {
@@ -16,38 +15,6 @@ export default function AboutPage() {
           </p>
           <p className="mt-6 max-w-5xl text-base leading-8 text-steel">{siteContent.founder.summary}</p>
           <PrimaryCTA className="mt-8">Schedule Meeting</PrimaryCTA>
-        </div>
-      </section>
-
-      <section className="section-frame pt-0">
-        <SectionHeading
-          eyebrow="Differentiator"
-          title={siteContent.aboutSection.title}
-        />
-        <div className="mt-10 panel p-8 md:p-10">
-          <div className="space-y-6">
-            {siteContent.aboutSection.paragraphs.map((paragraph) => (
-              <p key={paragraph} className="text-base leading-8 text-steel">
-                {paragraph}
-              </p>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-frame pt-0">
-        <SectionHeading
-          eyebrow="Professional Summary"
-          title="Leadership grounded in respiratory care and operations."
-        />
-        <div className="mt-10 panel p-8 md:p-10">
-          <div className="space-y-6">
-            {siteContent.founder.professionalSummary.map((paragraph) => (
-              <p key={paragraph} className="text-base leading-8 text-steel">
-                {paragraph}
-              </p>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -94,21 +61,13 @@ export default function AboutPage() {
           <div className="panel p-8 md:p-10">
             <p className="eyebrow">Personal mission</p>
             <p className="mt-6 text-base leading-8 text-steel">{siteContent.founder.mission}</p>
-            <div className="mt-8 rounded-[1.75rem] border border-bone/55 bg-mist p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sea/75">
-                Resume source
-              </p>
-              <p className="mt-3 text-sm leading-7 text-steel">
-                Based on the 2026 updated resume for Dustan Sprowls.
-              </p>
-            </div>
           </div>
         </div>
       </section>
 
       <section className="section-frame pt-0">
         <div className="dark-band panel px-8 py-10 text-white md:px-12 md:py-14">
-          <p className="eyebrow text-sage">Final CTA</p>
+          <p className="eyebrow text-sage">Next Step</p>
           <h2 className="title-balance mt-4 max-w-3xl font-display text-4xl md:text-5xl">
             {siteContent.finalCta.title}
           </h2>

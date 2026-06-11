@@ -55,21 +55,6 @@ const serviceTiles = [
   className: string;
 }>;
 
-const educationPreview = [
-  {
-    title: "Video Library",
-    description: "Short clinical refreshers, onboarding walkthroughs, and equipment training.",
-  },
-  {
-    title: "Guidelines & Protocols",
-    description: "Respiratory standards, competency references, and survey-readiness material.",
-  },
-  {
-    title: "Templates & Tools",
-    description: "KPI trackers, education plans, orientation tools, and leadership resources.",
-  },
-];
-
 const impactStats = [
   {
     value: "$112M+",
@@ -349,11 +334,9 @@ export default function HomePage() {
             <h2 className="title-balance mt-5 font-display text-4xl font-black uppercase leading-none text-white md:text-6xl">
               The experience your patients deserve.
             </h2>
-            <div className="mt-7 max-w-2xl space-y-5 text-base leading-8 text-steel">
-              {siteContent.aboutSection.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-            </div>
+            <p className="mt-7 max-w-2xl text-base leading-8 text-steel">
+              {siteContent.aboutSection.paragraphs[0]}
+            </p>
             <PrimaryCTA href="/about" variant="ghost" className="mt-9">
               Read Founder Bio
             </PrimaryCTA>
@@ -382,17 +365,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="grid gap-px bg-bone md:grid-cols-3">
-            {educationPreview.map((category) => (
-              <article key={category.title} className="bg-linen p-7 md:p-8">
-                <p className="eyebrow">Planned</p>
-                <h3 className="mt-4 font-display text-2xl font-bold uppercase leading-tight text-white md:text-3xl">
-                  {category.title}
-                </h3>
-                <p className="mt-4 max-w-sm text-sm leading-7 text-steel">{category.description}</p>
-              </article>
-            ))}
-          </div>
         </div>
       </section>
 

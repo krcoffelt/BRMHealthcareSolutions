@@ -58,7 +58,6 @@ export default function RootLayout({
     name: siteContent.companyName,
     description: siteContent.description,
     url: "https://brmhealthcaresolutions.com",
-    telephone: siteContent.contact.phone,
     email: siteContent.contact.email,
     sameAs: [siteContent.contact.linkedin],
     areaServed: "United States",

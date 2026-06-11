@@ -12,13 +12,12 @@ export default function EducationPage() {
           description={siteContent.education.intro}
         />
         <div className="dark-band rounded-[1.8rem] p-8 text-white">
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sage">Resource Focus</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-sage">Coming Soon</p>
           <p className="mt-5 text-3xl font-display leading-tight">
             Videos, guidelines, and templates in one place.
           </p>
           <p className="mt-4 text-sm leading-7 text-white/76">
-            This section is designed to become BRM&apos;s education library for staff development,
-            operational consistency, and clinical readiness.
+            A practical library for staff development, operational consistency, and clinical readiness.
           </p>
         </div>
       </section>
@@ -41,25 +40,15 @@ export default function EducationPage() {
         ))}
       </section>
 
-      <section className="mt-12 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="panel p-8 md:p-10">
-          <p className="eyebrow">Planned Library</p>
-          <h2 className="mt-4 font-display text-4xl leading-tight text-ink">
-            Education content can grow with your program.
+      <section className="mt-12">
+        <div className="border border-bone bg-sea p-8 text-white md:p-10">
+          <p className="text-xs font-black uppercase tracking-[0.3em] text-white">Custom Education</p>
+          <h2 className="mt-4 max-w-3xl font-display text-4xl font-black uppercase leading-tight">
+            Need respiratory or nursing education now?
           </h2>
-          <p className="mt-5 text-base leading-8 text-steel">
-            BRM can use this section to publish staff education videos, downloadable guidelines,
-            competency tools, and operational templates that support consistency across your facilities.
-          </p>
-        </div>
-
-        <div className="data-panel rounded-[2rem] border border-bone/50 p-8">
-          <p className="eyebrow">Next Step</p>
-          <p className="mt-4 text-2xl font-display text-ink">Need custom education support?</p>
-          <p className="mt-3 text-sm leading-7 text-steel">
-            Schedule a call to discuss the education resources, materials, and guidance your team needs.
-          </p>
-          <PrimaryCTA className="mt-6">Schedule a Call</PrimaryCTA>
+          <PrimaryCTA className="mt-7 border-white bg-white !text-charcoal hover:bg-charcoal hover:!text-white">
+            Schedule a Call
+          </PrimaryCTA>
         </div>
       </section>
     </div>

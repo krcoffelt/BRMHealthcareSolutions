@@ -231,7 +231,7 @@ export const siteContent = {
     ],
   },
   finalCta: {
-    title: "Ready to Elevate Your Respiratory Program?",
+    title: "Ready to Strengthen Your Respiratory Program?",
     description:
       "Let's talk about what BRM can do for your facility. Whether you need a one-time consultation or a full annual partnership, we'll build a plan around your specific needs and budget.",
     buttonLabel: "Schedule Meeting",
@@ -414,7 +414,6 @@ export const siteContent = {
   },
   contact: {
     email: "brmhealthcaresolutions@gmail.com",
-    phone: "(303) 435-7741",
     linkedin: "https://www.linkedin.com/company/brm-healthcare-solutions",
     bookingTitle: "Schedule Meeting",
     bookingHours: "Monday through Friday, 9:00 AM to 5:00 PM",
